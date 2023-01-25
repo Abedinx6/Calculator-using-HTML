@@ -24,8 +24,8 @@ function backspace(){
     else {
         data.pop();
         temp.pop();
-        display.innerHTML = temp.length == 1? "0":temp.join("");
-        temp.length == 1? init("0"):evaluate();
+        display.innerHTML = temp.length == 0? "0":temp.join("");
+        temp.length == 0? init("0"):evaluate();
     }
 }
 
